@@ -114,8 +114,34 @@ try
     Console.WriteLine($"#                                    #                                                                     #");
     Console.WriteLine($"############################################################################################################");
 
-    Console.WriteLine($"Interstellar Timekeeping™ is sponsored by US Military, Nestle, Raid Shadow Legends, and ");
-    
+    Console.WriteLine($"Interstellar Timekeeping™ is sponsored by US Military, Nestle and Raid Shadow Legends \n");
+
+    System.Threading.Thread.Sleep(120000);
+
+    Console.Write(@"^␍
+         | |␍
+       @#####@␍
+     (###   ###)-.␍
+   .(###     ###) \␍
+  /  (###   ###)   )␍
+ (=-  .@#####@|_--''␍
+ /\    \_|l|_/ (\␍
+(=-\     |l|    /␍
+ \  \.___|l|___/␍
+ /\      |_|   /␍
+(=-\._________/\␍
+ \             /␍
+   \._________/␍
+     #  ----  #␍
+     #   __   #␍
+     \########/␍
+    ");
+
+    Console.WriteLine("Enter Your Credit Card Details Below (Or we will kill you with the above gun.): ");
+    Console.ReadLine();
+
+    Console.WriteLine("Thank you for giving us your entire life savings: Draining bank account now.");
+
 }
 catch (TaskCanceledException)
 {
