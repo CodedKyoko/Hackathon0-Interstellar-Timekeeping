@@ -87,6 +87,35 @@ try
 
     Console.WriteLine($"Earth Time/Date: {earthDate}");
     Console.WriteLine($"{requestedName} Time/Date: {planetDate}");
+
+    Console.WriteLine($"############################################################################################################");
+    Console.WriteLine($"#               _____                #                                                                     #");
+    Console.WriteLine($"#            .-'.  ':'-.             #                                                                     #");
+    Console.WriteLine($"#          .''::: .:    '.           #                                                                     #");
+    Console.WriteLine($"#         /   :::::'      \\          #                                                                     #");
+    Console.WriteLine($"#        ;.    ':' `       ;         #                                                                     #");
+    Console.WriteLine($"#        |       '..       |         #                                                                     #");
+    Console.WriteLine($"#        ; '      ::::.    ;         #                                                                     #");
+    Console.WriteLine($"#         \\       '::::   /          #                                                                     #");
+    Console.WriteLine($"#          '.      :::  .'           #                                                                     #");
+    Console.WriteLine($"#            '-.___'_.-'             #                                                                     #");
+    Console.WriteLine($"#                                    #                                                                     #");
+    Console.WriteLine($"############################################################################################################");
+    Console.WriteLine($"#               _____                #                                                                     #");
+    Console.WriteLine($"#            .-'     '-.             #                                                                     #");
+    Console.WriteLine($"#          .'           '.           #                                                                     #");
+    Console.WriteLine($"#         /               \\          #                                                                     #");
+    Console.WriteLine($"#        ;                 ;         #                                                                     #");
+    Console.WriteLine($"#        |        ?        |         #                                                                     #");
+    Console.WriteLine($"#        ;                 ;         #                                                                     #");
+    Console.WriteLine($"#         \\               /          #                                                                     #");
+    Console.WriteLine($"#          '.           .'           #                                                                     #");
+    Console.WriteLine($"#            '-._____.-'             #                                                                     #");
+    Console.WriteLine($"#                                    #                                                                     #");
+    Console.WriteLine($"############################################################################################################");
+
+    Console.WriteLine($"Interstellar Timekeeping™ is sponsored by US Military, Nestle, Raid Shadow Legends, and ");
+    
 }
 catch (TaskCanceledException)
 {
