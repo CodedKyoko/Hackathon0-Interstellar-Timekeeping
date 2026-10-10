@@ -91,6 +91,8 @@ try
     Console.WriteLine($"Earth Time/Date: {earthDate}");
     Console.WriteLine($"{requestedName} Time/Date: {planetDate}");
 */
+    Console.Clear();
+
     Console.WriteLine($"#############################################################################################");
     Console.WriteLine($"#               _____                #                                                      #");
     Console.WriteLine($"#            .-'.  ':'-.             #                                                      #");
@@ -119,7 +121,7 @@ try
 
     Console.WriteLine($"Interstellar Timekeeping™ is sponsored by the US Military, Nestle and Raid Shadow Legends \n");
 
-    System.Threading.Thread.Sleep(120000);
+    System.Threading.Thread.Sleep(45000);
 
     Console.Write(@"          ^␍
          | |␍
