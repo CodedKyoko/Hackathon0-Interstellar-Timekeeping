@@ -86,7 +86,7 @@ try
     string planetDate = $"{planetYear}-{planetMonth:D2}-{planetDay:D2} {planetHour:D2}:{planetSecond:D2}";
 
     Console.WriteLine($"Earth Time/Date: {earthDate}");
-    Console.WriteLine($"Requested Planet Time/Date: {planetDate}");
+    Console.WriteLine($"{requestedName} Time/Date: {planetDate}");
 }
 catch (TaskCanceledException)
 {
