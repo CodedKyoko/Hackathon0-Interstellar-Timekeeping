@@ -74,7 +74,7 @@ try
     double planetYear = (daysSinceEpoch + (1970 * 365.25)) / (planet.OrbitalPeriodDays ?? 0);
 
     Console.WriteLine($"Earth year: {now.Year}");
-    Console.WriteLine($"Yeah of Requested planet: {Math.Floor(planetYear)}");
+    Console.WriteLine($"Year of Requested planet: {Math.Floor(planetYear)}");
 }
 catch (TaskCanceledException)
 {
