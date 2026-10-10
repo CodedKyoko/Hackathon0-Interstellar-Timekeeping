@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hackathon0")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9c8bc82113929e43d4b8d33e7247c43ecf302bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1a5f276fa5a17ad9bdeecb4f1686d153cc4ac5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hackathon0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hackathon0")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
