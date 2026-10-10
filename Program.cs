@@ -52,8 +52,10 @@ try
         Console.WriteLine("Run the program again with the exact name shown above.");
         return;
     }
-
+    
     PlanetRecord planet = planets[0];
+
+    /*
     Console.WriteLine($"Requested name: {requestedName}");
     Console.WriteLine($"Archive name: {Value(planet.Name)}");
     Console.WriteLine($"Host star: {Value(planet.HostName)}");
@@ -67,7 +69,7 @@ try
     Console.WriteLine($"Host distance: {Format(planet.SystemDistancePc, "parsecs")}");
     Console.WriteLine();
     Console.WriteLine("These are catalogued parameters, not a calculated 3D position for a requested date.");
-
+        */
     // Epoch shit
     DateTimeOffset now = (DateTimeOffset)DateTime.UtcNow;
     int secondsToDays = 86400;
@@ -85,19 +87,19 @@ try
 
     string earthDate = $"{now.Year:D4}-{now.Month:D2}-{now.Day:D2} {now.Hour:D2}:{now.Minute:D2}";
     string planetDate = $"{planetYear}-{planetMonth:D2}-{planetDay:D2} {planetHour:D2}:{planetMinute:D2}";
-
+/*
     Console.WriteLine($"Earth Time/Date: {earthDate}");
     Console.WriteLine($"{requestedName} Time/Date: {planetDate}");
-
+*/
     Console.WriteLine($"#############################################################################################");
     Console.WriteLine($"#               _____                #                                                      #");
     Console.WriteLine($"#            .-'.  ':'-.             #                                                      #");
     Console.WriteLine($"#          .''::: .:    '.           #                                                      #");
-    Console.WriteLine($"#         /   :::::'      \\          #       Earth                                          #");
+    Console.WriteLine($"#         /   :::::'      \\          #        Earth                                        #");
     Console.WriteLine($"#        ;.    ':' `       ;         #       Day: {now.Day:D2}                                        #");
-    Console.WriteLine($"#        |       '..       |         #       Month: {now.Month:D2}                                      #");
+    Console.WriteLine($"#        |       '..       |         #        : {now.Month:D2}                                         #");
     Console.WriteLine($"#        ; '      ::::.    ;         #       Year: {now.Year:D4}                                     #");
-    Console.WriteLine($"#         \\       '::::   /          #       Time: {now.Hour}:{now.Minute}                                    #");
+    Console.WriteLine($"#         \\       '::::   /          #        : {now.Hour:D2}:{now.Minute:D2}                                      #");
     Console.WriteLine($"#          '.      :::  .'           #                                                      #");
     Console.WriteLine($"#            '-.___'_.-'             #                                                      #");
     Console.WriteLine($"#                                    #                                                      #");
@@ -105,17 +107,17 @@ try
     Console.WriteLine($"#               _____                #                                                      #");
     Console.WriteLine($"#            .-'     '-.             #                                                      #");
     Console.WriteLine($"#          .'           '.           #                                                      #");
-    Console.WriteLine($"#         /               \\          #       {requestedName, -30}                 #");
+    Console.WriteLine($"#         /               \\          #        {requestedName, -30}               #");
     Console.WriteLine($"#        ;                 ;         #       Day: {planetDay:D2}                                        #");
-    Console.WriteLine($"#        |        ?        |         #       Month: {planetMonth:D2}                                      #");
+    Console.WriteLine($"#        |        ?        |         #        : {planetMonth:D2}                                         #");
     Console.WriteLine($"#        ;                 ;         #       Year: {planetYear, -30}           #");
-    Console.WriteLine($"#         \\               /          #       Time: {planetHour}:{planetMinute}                                     #");
+    Console.WriteLine($"#         \\               /          #        : {planetHour:D2}:{planetMinute:D2}                                      #");
     Console.WriteLine($"#          '.           .'           #                                                      #");
     Console.WriteLine($"#            '-._____.-'             #                                                      #");
     Console.WriteLine($"#                                    #                                                      #");
     Console.WriteLine($"#############################################################################################");
 
-    Console.WriteLine($"Interstellar Timekeeping™ is sponsored by US Military, Nestle and Raid Shadow Legends \n");
+    Console.WriteLine($"Interstellar Timekeeping™ is sponsored by the US Military, Nestle and Raid Shadow Legends \n");
 
     System.Threading.Thread.Sleep(120000);
 
@@ -188,8 +190,8 @@ async Task<List<PlanetRecord>> QueryPlanetsAsync(string name, bool exact)
         new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<PlanetRecord>();
 }
 
-static string Value<T>(T? value) => value is null ? "Not available" : value.ToString() ?? "Not available";
-static string Format(double? value, string unit) => value is null ? "Not available" : $"{value.Value:G8} {unit}";
+//static string Value<T>(T? value) => value is null ? "Not available" : value.ToString() ?? "Not available";
+//static string Format(double? value, string unit) => value is null ? "Not available" : $"{value.Value:G8} {unit}";
 
 public sealed class PlanetRecord
 {
