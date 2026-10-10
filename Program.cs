@@ -70,11 +70,23 @@ try
 
     // Epoch shit
     DateTimeOffset now = (DateTimeOffset)DateTime.UtcNow;
-    double daysSinceEpoch = now.ToUnixTimeSeconds() / 86400;
-    double planetYear = (daysSinceEpoch + (1970 * 365.25)) / (planet.OrbitalPeriodDays ?? 0);
+    int secondsToDays = 86400;
+    double daysToYears = 365.25;
 
-    Console.WriteLine($"Earth year: {now.Year}");
-    Console.WriteLine($"Year of Requested planet: {Math.Floor(planetYear)}");
+    double year0Epoch = now.ToUnixTimeSeconds() + (secondsToDays * daysToYears * 1970);
+    double planetEpoch = year0Epoch / ((planet.OrbitalPeriodDays ?? 0 * daysToYears) / daysToYears);
+
+    int planetYear = (int)Math.Floor(planetEpoch / secondsToDays / daysToYears);
+    int planetMonth = (int)Math.Floor(((planetEpoch / secondsToDays / daysToYears) * 12) % 12) + 1;
+    int planetDay = (int)Math.Floor(((planetEpoch / secondsToDays) * 31) % 31) + 1;
+    int planetHour = (int)Math.Floor(((planetEpoch / 60 / 60) * 24) % 24);
+    int planetSecond = (int)Math.Floor(planetEpoch % 60);
+
+    string earthDate = $"{now.Year:D4}-{now.Month:D2}-{now.Day:D2} {now.Hour:D2}:{now.Minute:D2}";
+    string planetDate = $"{planetYear}-{planetMonth:D2}-{planetDay:D2} {planetHour:D2}:{planetSecond:D2}";
+
+    Console.WriteLine($"Earth Time/Date: {earthDate}");
+    Console.WriteLine($"Requested Planet Time/Date: {planetDate}");
 }
 catch (TaskCanceledException)
 {
