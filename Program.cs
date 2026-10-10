@@ -118,7 +118,7 @@ try
 
     System.Threading.Thread.Sleep(120000);
 
-    Console.Write(@"^␍
+    Console.Write(@"          ^␍
          | |␍
        @#####@␍
      (###   ###)-.␍
