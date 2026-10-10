@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4MzK1oFZgJg=",
+  "dgSpecHash": "EOrEY6KH7pI=",
   "success": true,
-  "projectFilePath": "/home/lily-snowleafie/projects/Uni-Projects/Hackathons/Hackathon0/Hackathon0.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/damian/Work/Hackathon0-Interstellar-Timekeeping/Hackathon0.csproj",
+  "expectedPackageFiles": [
+    "/home/damian/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

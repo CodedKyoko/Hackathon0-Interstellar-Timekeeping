@@ -1,31 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "/home/lily-snowleafie/projects/Uni-Projects/Hackathons/Hackathon0/Hackathon0.csproj": {}
+    "/home/damian/Work/Hackathon0-Interstellar-Timekeeping/Hackathon0.csproj": {}
   },
   "projects": {
-    "/home/lily-snowleafie/projects/Uni-Projects/Hackathons/Hackathon0/Hackathon0.csproj": {
+    "/home/damian/Work/Hackathon0-Interstellar-Timekeeping/Hackathon0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lily-snowleafie/projects/Uni-Projects/Hackathons/Hackathon0/Hackathon0.csproj",
+        "projectUniqueName": "/home/damian/Work/Hackathon0-Interstellar-Timekeeping/Hackathon0.csproj",
         "projectName": "Hackathon0",
-        "projectPath": "/home/lily-snowleafie/projects/Uni-Projects/Hackathons/Hackathon0/Hackathon0.csproj",
-        "packagesPath": "/home/lily-snowleafie/.nuget/packages/",
-        "outputPath": "/home/lily-snowleafie/projects/Uni-Projects/Hackathons/Hackathon0/obj/",
+        "projectPath": "/home/damian/Work/Hackathon0-Interstellar-Timekeeping/Hackathon0.csproj",
+        "packagesPath": "/home/damian/.nuget/packages/",
+        "outputPath": "/home/damian/Work/Hackathon0-Interstellar-Timekeeping/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lily-snowleafie/.nuget/NuGet/NuGet.Config"
+          "/home/damian/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "/nix/store/b8lqbpbgy4lyp46dwxks5x5i8mrvc806-dotnet-sdk-10.0.401/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -40,11 +38,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -57,12 +54,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[10.0.12, 10.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/nix/store/b8lqbpbgy4lyp46dwxks5x5i8mrvc806-dotnet-sdk-10.0.401/share/dotnet/sdk/10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

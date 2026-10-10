@@ -67,6 +67,14 @@ try
     Console.WriteLine($"Host distance: {Format(planet.SystemDistancePc, "parsecs")}");
     Console.WriteLine();
     Console.WriteLine("These are catalogued parameters, not a calculated 3D position for a requested date.");
+
+    // Epoch shit
+    DateTimeOffset now = (DateTimeOffset)DateTime.UtcNow;
+    double daysSinceEpoch = now.ToUnixTimeSeconds() / 86400;
+    double planetYear = (daysSinceEpoch + (1970 * 365.25)) / (planet.OrbitalPeriodDays ?? 0);
+
+    Console.WriteLine($"Earth year: {now.Year}");
+    Console.WriteLine($"Yeah of Requested planet: {planetYear}");
 }
 catch (TaskCanceledException)
 {
